@@ -53,3 +53,4 @@ node equation.js input.txt
 Програма обробить вміст файлу і виведе розв'язок квадратного рівняння.
 
 ## Посилання на revert commit
+[revert commit example](https://github.com/saveniukk/quadratic-equation-calculator/commit/c6aced377c921c7a135338019e3dc46d32ee5d2d)
