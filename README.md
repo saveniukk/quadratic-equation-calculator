@@ -19,13 +19,13 @@
 Склонуйте репозиторій на ваш комп'ютер за допомогою команди:
 
 ```bash
- git clone https://github.com/saveniukk/quadratic-equation-solver.git
+ git clone https://github.com/saveniukk/quadratic-equation-calculator.git
 ```
 
 Перейдіть у каталог проекту:
 
 ```bash
- cd quadratic-equation-solver
+ cd quadratic-equation-calculator
 ```
 
 ---
