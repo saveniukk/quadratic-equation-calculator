@@ -1,3 +1,4 @@
+const fs = require('fs');
 const readline = require('readline');
 
 const calculateQuadEquation = (a, b, c) => {
@@ -43,3 +44,34 @@ const interactiveMode = () => {
         });
     });
 };
+
+const fileMode = (filePath) => {
+    if (!fs.existsSync(filePath)) {
+        console.log(`Error. File ${filePath} does not exist`);
+        process.exit(1);
+    }
+
+    try {
+        const data = fs.readFileSync(filePath, 'utf8').trim();
+        const parts = data.split(' ').map(Number);
+        
+        if (parts.length !== 3 || parts.some(isNaN)) {
+            throw new Error('Invalid file format');
+        }
+        if (parts[0] === 0) {
+            throw new Error('Error. a cannot be 0');
+        }
+        
+        console.log(calculateQuadEquation(...parts));
+    } catch (error) {
+        console.log(error.message);
+        process.exit(1);
+    }
+};
+
+const filePath = process.argv[2];
+if (filePath) {
+    fileMode(filePath);
+} else {
+    interactiveMode();
+}
