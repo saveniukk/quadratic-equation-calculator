@@ -53,7 +53,7 @@ const fileMode = (filePath) => {
 
     try {
         const data = fs.readFileSync(filePath, 'utf8').trim();
-        const parts = data.split(',').map(Number);
+        const parts = data.split(' ').map(Number);
         
         if (parts.length !== 3 || parts.some(isNaN)) {
             throw new Error('Invalid file format');
