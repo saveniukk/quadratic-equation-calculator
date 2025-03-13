@@ -69,6 +69,6 @@
 ---
 
 ### Посилання на revert commit
-[Переглянути приклад](https://github.com/saveniukk/quadratic-equation-calculator/commit/c6aced377c921c7a135338019e3dc46d32ee5d2d)
+[Переглянути приклад](https://github.com/saveniukk/quadratic-equation-calculator/commit/6f00fad95f437e04c02bcf5afce27cbf93c3d623)
 
 
